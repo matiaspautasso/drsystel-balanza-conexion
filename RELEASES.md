@@ -18,10 +18,17 @@ https://github.com/matiaspautasso/drsystel-balanza-conexion/releases/latest/down
 
 | Tag | Fecha | Instalador | SHA256 |
 |---|---|---|---|
+| `bridge-v1.3.2` | 2026-11-05 | `PuenteBalanza-Setup-1.3.2.exe` | `37b8c6d89442f7db4ac199b4ca27cdefb4d6faaae63af4f478e4c4bd0262b442` |
 | `bridge-v1.3.1` | 2026-11-05 | `PuenteBalanza-Setup-1.3.1.exe` | `dabb3b0bc38e20f6d97ff17696b3ff21760436c7e94f057a7a1b633934df47ad` |
 | `bridge-v1.3.0` | 2026-11-05 | `PuenteBalanza-Setup-1.3.0.exe` | `cdbefc0682e2a93903aca7967bcd5c54d35a6ad63d53359d714619a24bb5d55f` |
 | `bridge-v1.1.0` | 2026-10-14 | `PuenteBalanza-Setup-1.1.0.exe` | `08ed13670c937a8b012a4c07e071805aaf157c2caf3d151c646531d9566a8775` |
 | `bridge-v1.0.0` | 2026-09-25 | `PuenteBalanza-Setup-1.0.0.exe` | `c45812d4162f8df9ff7d2b7df4f146b3d2dffbc85faafb3ed221552714aecbef` |
+
+## 1.3.2
+
+Solo se cargan en el ERP los tickets emitidos con la balanza conectada al sistema: en cada
+(re)conexión lo que ya tiene la balanza se toma como visto sin enviarse. Las pendientes con
+conexión se siguen entregando.
 
 ## 1.3.1
 
