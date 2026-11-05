@@ -18,16 +18,22 @@ https://github.com/matiaspautasso/drsystel-balanza-conexion/releases/latest/down
 
 | Tag | Fecha | Instalador | SHA256 |
 |---|---|---|---|
+| `bridge-v1.3.1` | 2026-11-05 | `PuenteBalanza-Setup-1.3.1.exe` | `dabb3b0bc38e20f6d97ff17696b3ff21760436c7e94f057a7a1b633934df47ad` |
 | `bridge-v1.3.0` | 2026-11-05 | `PuenteBalanza-Setup-1.3.0.exe` | `cdbefc0682e2a93903aca7967bcd5c54d35a6ad63d53359d714619a24bb5d55f` |
 | `bridge-v1.1.0` | 2026-10-14 | `PuenteBalanza-Setup-1.1.0.exe` | `08ed13670c937a8b012a4c07e071805aaf157c2caf3d151c646531d9566a8775` |
 | `bridge-v1.0.0` | 2026-09-25 | `PuenteBalanza-Setup-1.0.0.exe` | `c45812d4162f8df9ff7d2b7df4f146b3d2dffbc85faafb3ed221552714aecbef` |
+
+## 1.3.1
+
+Fix de F31 (`GET /plus`): la trama ya no se corta ante la pausa de ~250 ms de la balanza (el
+silencio solo cierra la trama con XOR valido). Verificado en HW: 425 PLU en ~0,7 s.
 
 ## 1.3.0
 
 Push-on-change con shadow SQLite (`data\shadow-plu.db`): los cambios de PLU se aplican de a uno
 (F33/F4) en vez de reconciliar ~400 PLU cada 5 min. El instalador suma `better_sqlite3.node`.
-Actualizar encima conserva `config.env` y `data\`. Problema conocido: `GET /plus` (F31) puede
-fallar con XOR incorrecto (trama cortada por silencio de 80 ms).
+Actualizar encima conserva `config.env` y `data\`. Corregido en 1.3.1: `GET /plus` (F31) fallaba con
+XOR incorrecto (trama cortada por silencio de 80 ms).
 
 ## 1.1.0
 
