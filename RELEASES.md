@@ -18,6 +18,7 @@ https://github.com/matiaspautasso/drsystel-balanza-conexion/releases/latest/down
 
 | Tag | Fecha | Instalador | SHA256 |
 |---|---|---|---|
+| `bridge-v1.3.5` | 2026-11-06 | `PuenteBalanza-Setup-1.3.5.exe` | `8c432b503495502f4cf75256ca6fe30f372ed8d54063119541fc0605e27e1a7f` |
 | `bridge-v1.3.4` | 2026-11-05 | `PuenteBalanza-Setup-1.3.4.exe` | `cbaca6f1ec18f07bd0f339ccaa2996ff0823f127fbc28532e6150a42998a8396` |
 | `bridge-v1.3.3` | 2026-11-05 | `PuenteBalanza-Setup-1.3.3.exe` | `7257f38f2c32d7204700c12f9655b5d2b447941b25ef615f78fd354cf41350e5` |
 | `bridge-v1.3.2` | 2026-11-05 | `PuenteBalanza-Setup-1.3.2.exe` | `37b8c6d89442f7db4ac199b4ca27cdefb4d6faaae63af4f478e4c4bd0262b442` |
@@ -25,6 +26,12 @@ https://github.com/matiaspautasso/drsystel-balanza-conexion/releases/latest/down
 | `bridge-v1.3.0` | 2026-11-05 | `PuenteBalanza-Setup-1.3.0.exe` | `cdbefc0682e2a93903aca7967bcd5c54d35a6ad63d53359d714619a24bb5d55f` |
 | `bridge-v1.1.0` | 2026-10-14 | `PuenteBalanza-Setup-1.1.0.exe` | `08ed13670c937a8b012a4c07e071805aaf157c2caf3d151c646531d9566a8775` |
 | `bridge-v1.0.0` | 2026-09-25 | `PuenteBalanza-Setup-1.0.0.exe` | `c45812d4162f8df9ff7d2b7df4f146b3d2dffbc85faafb3ed221552714aecbef` |
+
+## 1.3.5
+
+Carga segura de varios PLU desde Gestión Balanza: revisar (solo lectura, detecta conflictos de
+nombre), aplicar con respaldo y verificación (máx. 50 por lote, conflictos solo si se confirman
+uno por uno, en PLU existentes solo precio) y deshacer el último lote.
 
 ## 1.3.4
 
